@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BME Automation App - Corrective Action Report</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <link rel="icon" href="images\bme_logo.jpg">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="images/bme_logo.jpg" alt="Boilermech Energy Logo" width="20%"></a></div>
+                <div class="welcome">
+                    <p>Welcome, User</p>
+                    <a href="login.html"><button type="submit" class="button logout">Log Out</button></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1>Corrective Action Report (e-CAR) Manager Review</h1>
+            <div class="menu-box">
+                <h3 class="title">Issue Summary</h3>
+                <div>
+                    <p class="report-form"><label for="reported-by">Reported By:</label>
+                    <input type="text" class="input-box" placeholder="{Current User}" disabled></p>
+                    <p class="report-form"><label for="reported-date">Reported Date:</label>
+                    <input type="date" class="input-box" disabled></p>
+                    <p class="report-form"><label for="issue-description">Issue Description:</label><br>
+                    <input type="text" class="multi-line-input-box" placeholder="{Issue Description}" disabled></p>
+                    <p class="report-form"><label for="location">Location:</label>
+                    <input type="text" class="input-box" placeholder="{Location}" disabled></p>
+                </div>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Follow-up Action</h3>
+                <div>
+                    <p class="report-form"><label for="corrective-action-taken">Corrective Action Taken:</label><br>
+                    <input type="text" class="multi-line-input-box" placeholder="{Action}" disabled></p>
+                    <p class="report-form"><label for="supportive-evidence">Supportive Evidence:</label>
+                    <p><input type="file" id="ptw_form" name="ptw_form" accept="image/png, image/jpeg" placeholder="{image}" disabled/></p>
+                </div>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Approver Remarks</h3>
+                <input type="text" class="multi-line-input-box" placeholder="{Approver Remark}" disabled></p>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Manager Remarks</h3>
+                <input type="text" class="multi-line-input-box" placeholder="Remark"></p>
+            </div>
+            <div class="menu-box button-justify">
+                <a href="#"><button type="submit" class="button button-reject">Reject</button></a>
+                <a href="#"><button type="submit" class="button button-approve">Approve</button></a>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-bottom">
+                <p class="small">© 2025 Boilermech Sdn Bhd. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

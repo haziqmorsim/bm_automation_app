@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BME Automation App - Project Info Management</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <link rel="icon" href="images\bme_logo.jpg">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="images/bme_logo.jpg" alt="Boilermech Energy Logo" width="20%"></a></div>
+                <div class="welcome">
+                    <p>Welcome, User</p>
+                    <a href="login.html"><button type="submit" class="button logout">Log Out</button></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1>Project Info Management</h1>
+            <p>Project Status</p>
+            <div class="menu">
+                <select name="departments" id="departments" class="menu-box select">
+                    <option value="default">Choose a status</option>
+                    <option value="factory">Factory</option>
+                    <option value="delivery">Delivery</option>
+                    <option value="installation">Installation</option>
+                    <option value="completion">Completion</option>
+                    <option value="commissioning">Commissioning</option>
+                    <option value="na">N/A</option>
+                </select>
+            </div>
+            <p>Data Option</p>
+            <div class="menu">
+                <select name="users" id="users" class="menu-box select">
+                    <option value="default">Choose a data option</option>
+                    <option value="project-id">Project ID</option>
+                    <option value="project-name">Project Name</option>
+                    <option value="project-region">Project Region</option>
+                </select>
+                <input type="text" class="menu-box project-input"/>
+            </div>
+            <div class="project-excel">
+                <a href="#"><button type="submit" class="button button-pe"><i class="fa fa-plus-square fa-m" aria-hidden="true"></i>&nbsp;&nbsp;New Project</button></a>
+                <a href="#"><button type="submit" class="button button-pe"><i class="fa fa-download fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Excel</button></a>
+            </div>
+            <div class="projects">
+                <div class="menu-box menu-project">
+                    <p class="menu-title">ABC Palm Oil Co. Ltd.</p>
+                    <p class="menu-description"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;&nbsp;Local</p>
+                    <p class="menu-description"><i class="fa fa-map-marker fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Sarawak</p>
+                    <p class="menu-description"><i class="fa fa-user fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Nik Hafidzuddin bin Nik Azlan</p>
+                    <p class="menu-start-date">Start Date: <b>03/02/2025</b></p>
+                    <p class="menu-end-date">End Date: <b>30/04/2025</b></p>
+                </div>
+                <div class="menu-box menu-project">
+                    <p class="menu-title">Colossal Industries (M) Sdn Bhd</p>
+                    <p class="menu-description"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;&nbsp;Overseas</p>
+                    <p class="menu-description"><i class="fa fa-map-marker fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Congo</p>
+                    <p class="menu-description"><i class="fa fa-user fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Chan Shun Tean</p>
+                    <p class="menu-start-date">Start Date: <b>14/12/2024</b></p>
+                    <p class="menu-end-date">End Date: <b>03/05/2025</b></p>
+                </div>
+                <div class="menu-box menu-project">
+                    <p class="menu-title">FGV Palm Industries Sdn Bhd</p>
+                    <p class="menu-description"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;&nbsp;Local</p>
+                    <p class="menu-description"><i class="fa fa-map-marker fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Johor</p>
+                    <p class="menu-description"><i class="fa fa-user fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Devasagayam A/L Rajagobal</p>
+                    <p class="menu-start-date">Start Date: <b>14/04/2025</b></p>
+                    <p class="menu-end-date">End Date: <b>16/07/2025</b></p>
+                </div>
+            </div>
+            <div class="projects">
+                <div class="menu-box menu-project">
+                    <p class="menu-title">Benta Wawasan Sdn Bhd</p>
+                    <p class="menu-description"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;&nbsp;Local</p>
+                    <p class="menu-description"><i class="fa fa-map-marker fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Sabah</p>
+                    <p class="menu-description"><i class="fa fa-user fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Ali bin Abu</p>
+                    <p class="menu-start-date">Start Date: <b>28/06/2025</b></p>
+                    <p class="menu-end-date">End Date: <b>25/09/2025</b></p>
+                </div>
+                <div class="menu-box menu-project">
+                    <p class="menu-title">Carotino Palm Oil Mill</p>
+                    <p class="menu-description"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;&nbsp;Local</p>
+                    <p class="menu-description"><i class="fa fa-map-marker fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Pahang</p>
+                    <p class="menu-description"><i class="fa fa-user fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Wong Ji Yuan</p>
+                    <p class="menu-start-date">Start Date: <b>01/07/2025</b></p>
+                    <p class="menu-end-date">End Date: <b>15/08/2025</b></p>
+                </div>
+                <div class="menu-box menu-project">
+                    <p class="menu-title">Filipinas Palmoil Plantations Inc</p>
+                    <p class="menu-description"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;&nbsp;Overseas</p>
+                    <p class="menu-description"><i class="fa fa-map-marker fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Philippines</p>
+                    <p class="menu-description"><i class="fa fa-user fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Ahmad Sobri bin Danial</p>
+                    <p class="menu-start-date">Start Date: <b>20/08/2025</b></p>
+                    <p class="menu-end-date">End Date: <b>11/11/2025</b></p>
+                </div>
+            </div>
+            <div class="projects">
+                <div class="menu-box menu-project">
+                    <p class="menu-title">Trong Palm Oil Mill</p>
+                    <p class="menu-description"><i class="fa fa-globe" aria-hidden="true"></i>&nbsp;&nbsp;Local</p>
+                    <p class="menu-description"><i class="fa fa-map-marker fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Perak</p>
+                    <p class="menu-description"><i class="fa fa-user fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Thivyamurthi A/L Ramalu</p>
+                    <p class="menu-start-date">Start Date: <b>01/09/2025</b></p>
+                    <p class="menu-end-date">End Date: <b>01/12/2025</b></p>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-bottom">
+                <p class="small">© 2025 Boilermech Sdn Bhd. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

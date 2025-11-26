@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BME Automation App - Site Safety Information</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <link rel="icon" href="images\bme_logo.jpg">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="images/bme_logo.jpg" alt="Boilermech Energy Logo" width="20%"></a></div>
+                <div class="welcome">
+                    <p>Welcome, User</p>
+                    <a href="login.html"><button type="submit" class="button logout">Log Out</button></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1>Site Safety Information</h1>
+            <div class="menu radio-data">
+                <input type="radio" class="radio" id="eCAR" name="eCAR">
+                <label for="eCAR" class="radio-data">eCAR Data</label>
+                <input type="radio" class="radio" id="eCTR" name="eCTR">
+                <label for="eCTR" class="radio-data">eCTR Data</label>
+                <input type="radio" class="radio" id="eHKP" name="eHKP">
+                <label for="eHKP" class="radio-data">eHKP Data</label>
+                <input type="radio" class="radio" id="eSOA" name="eSOA">
+                <label for="eSOA" class="radio-data">eSOA Data</label>
+                <input type="radio" class="radio" id="eTBM" name="eTBM">
+                <label for="eTBM" class="radio-data">eTBM Data</label>
+                <input type="radio" class="radio" id="eZCA" name="eZCA">
+                <label for="eZCA" class="radio-data">eZCA Data</label>
+            </div>
+            <p>Created Date</p>
+            <div class="menu">
+                <input type="date" id="start-date" name="start-date" class="menu-box">
+                &nbsp;to&nbsp;
+                <input type="date" id="end-date" name="end-date" class="menu-box">
+            </div>
+            <p>Project ID</p>
+            <div class="menu">
+                <input type="text" class="search-box project-input"/>
+                <a href="#"><button type="submit" class="button button-search"><i class="fa fa-search fa-m" aria-hidden="true"></i></button></a>
+            </div>
+            <div class="excel">
+                <a href="#"><button type="submit" class="button button-pe"><i class="fa fa-download fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Excel</button></a>
+            </div>
+            <div class="projects">
+                <div class="menu-box site-safety-project">
+                    <button class="button site-safety-project-button">View Details</button>
+                    <p class="menu-title">Project SD987654</p>
+                    <p class="menu-description"><b>Project Name: </b>SD Tanah Merah</p>
+                    <p class="menu-description"><b>Project ID: </b>SD987654</p>
+                    <p class="menu-description"><b>Conducted By: </b>Rony Joseph</p>
+                    <p class="menu-description"><b>Created Date: </b>26/11/2025</p>
+                    <p class="menu-description"><b>Location Submitted: </b>Jalan Ladang Tanah Merah A3, 71960 Port Dickson, Negeri Sembilan, Malaysia</p>
+                    <p class="menu-description"><b>Image:</b></p>
+                    <img src="images/sample2.jpg" alt="sample2" width="15%">
+                </div>
+            </div>
+            <div class="projects">
+                <div class="menu-box site-safety-project">
+                    <button class="button site-safety-project-button">View Details</button>
+                    <p class="menu-title">Project PB123456</p>
+                    <p class="menu-description"><b>Project Name: </b>ABC Palm Oil Co. Ltd.</p>
+                    <p class="menu-description"><b>Project ID: </b>PB123456</p>
+                    <p class="menu-description"><b>Conducted By: </b>Nik Hafidzuddin bin Nik Azlan</p>
+                    <p class="menu-description"><b>Created Date: </b>03/11/2025</p>
+                    <p class="menu-description"><b>Location Submitted: </b>Jalan Padungan, 93100, Kuching, Sarawak, Malaysia</p>
+                    <p class="menu-description"><b>Image:</b></p>
+                    <img src="images/sample.jpg" alt="sample" width="15%">
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-bottom">
+                <p class="small">© 2025 Boilermech Sdn Bhd. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

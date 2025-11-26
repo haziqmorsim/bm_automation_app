@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BME Automation App - Competency Register Report</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <link rel="icon" href="images\bme_logo.jpg">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="images/bme_logo.jpg" alt="Boilermech Energy Logo" width="20%"></a></div>
+                <div class="welcome">
+                    <p>Welcome, User</p>
+                    <a href="login.html"><button type="submit" class="button logout">Log Out</button></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1>Competency Register Report (e-CTR) Submission</h1>
+            <p>Competency Register Report Submission Form</p>
+            <div class="menu-box">
+                <h3 class="title">General Information</h3>
+                <button type="submit" class="button"><i class="fa fa-search fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Search Project</button>
+                <div>
+                    <p class="report-form"><label for="project-name">Project Name:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="project-id">Project ID:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="region">Region:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="location">Location:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="kickoff-date">Kick-off Date:</label>
+                    <input type="date" class="input-box"></p>
+                    <p class="report-form"><label for="weather">Weather:</label>
+                    <input type="text" class="input-box"></p>
+                </div>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Site Safety Supervisor Allocation</h3>
+                <div>
+                    <p class="report-form"><label for="supervisor-name">Supervisor Name:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="start-date">Start Date:</label>
+                    <input type="date" class="input-box"></p>
+                    <p class="report-form"><label for="end-date">End Date:</label>
+                    <input type="date" class="input-box"/>
+                </div>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Staff Information</h3>
+                <h4>Workday</h4>
+                <div>
+                    <p class="report-form"><label for="staff-name">Staff Name:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="date">Date:</label>
+                    <input type="date" class="input-box"/>
+                    <p class="report-form"><label for="hours-worked">Hours Worked:</label>
+                    <input type="text" class="input-box"></p>    
+                </div>
+                <h4>Overtime (OT) Claim</h4>
+                <div>
+                    <p class="report-form"><label for="workday">Workday:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="hours-overtime">Hours Overtime:</label>
+                    <input type="text" class="input-box"></p>    
+                </div>
+                <h4>Travel Details</h4>
+                <div>
+                    <p class="report-form"><label for="date">Date:</label>
+                    <input type="date" class="input-box"/>
+                    <p class="report-form"><label for="origin">Origin:</label>
+                    <input type="text" class="input-box"></p>    
+                    <p class="report-form"><label for="destination">Destination:</label>
+                    <input type="text" class="input-box"></p>    
+                    <p class="report-form"><label for="allowance">Allowance:</label>
+                    <input type="text" class="input-box"></p>    
+                </div>
+                <h3 class="title">Contractor Information</h3>
+                <div>
+                    <p class="report-form"><label for="contractor-name">Contractor Name:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="phone-number">Phone Number:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="company">Company:</label>
+                    <input type="text" class="search-box project-input"/>
+                    <p class="report-form"><label for="email">E-mail:</label>
+                    <input type="email" class="search-box project-input"/>
+                    <p class="report-form"><label for="cert-expiry-date">Certification Expiry Date:</label>
+                    <input type="date" class="input-box"/>
+                </div>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Remarks</h3>
+                <input type="text" class="multi-line-input-box"></p>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Acknowledgement & Submission</h3>
+                <p>The declaration for the competency register report is as below:</p>
+                <p>I hereby acknowledge that I have conducted a thorough check and confirm the following:</p>
+                <p>>> All information in this report is accurate and up to date.</p>
+                <p>>> All personnel working on site are registered and have appropriate permits.</p>
+                <p>By entering my password below, I confirm my identity and consent as a digital acknowledgment.</p>
+                <p>I understand that this action may be recorded as part of the official audit trail.</p>
+                <a href="#"><button type="submit" class="button">Submit</button></a>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-bottom">
+                <p class="small">© 2025 Boilermech Sdn Bhd. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

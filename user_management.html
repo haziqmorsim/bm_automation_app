@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BME Automation App - User Access Management</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <link rel="icon" href="images\bme_logo.jpg">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="images/bme_logo.jpg" alt="Boilermech Energy Logo" width="20%"></a></div>
+                <div class="welcome">
+                    <p>Welcome, User</p>
+                    <a href="login.html"><button type="submit" class="button logout">Log Out</button></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1>User Access Management</h1>
+            <p>Department</p>
+            <div class="menu">
+                <select name="departments" id="departments" class="menu-box select">
+                    <option value="default">Choose a department</option>
+                    <option value="project">Project</option>
+                    <option value="hse">HSE</option>
+                </select>
+            </div>
+            <p>User</p>
+            <div class="menu">
+                <select name="users" id="users" class="menu-box select">
+                    <option value="default">Choose a user</option>
+                    <option value="user1">User 1</option>
+                    <option value="user2">User 2</option>
+                    <option value="user3">User 3</option>
+                    <option value="user4">User 4</option>
+                    <option value="user5">User 5</option>
+                </select>
+            </div>
+            <div class="access">
+                <a href="#"><button type="submit" class="access-removed">Remove Access</button></a>
+                <a href="#"><button type="submit" class="access-granted">Grant Access</button></a>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-bottom">
+                <p class="small">© 2025 Boilermech Sdn Bhd. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

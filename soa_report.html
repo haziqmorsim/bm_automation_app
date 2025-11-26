@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BME Automation App - Safety Officer Audit Report</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <link rel="icon" href="images\bme_logo.jpg">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="images/bme_logo.jpg" alt="Boilermech Energy Logo" width="20%"></a></div>
+                <div class="welcome">
+                    <p>Welcome, User</p>
+                    <a href="login.html"><button type="submit" class="button logout">Log Out</button></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1>Safety Officer Audit Report (e-SOA) Submission</h1>
+            <p>Safety Officer Audit Report Submission Form</p>
+            <div class="menu-box">
+                <h3 class="title">General Information</h3>
+                <button type="submit" class="button"><i class="fa fa-search fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Search Project</button>
+                <div>
+                    <p class="report-form"><label for="project-name">Project Name:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="project-id">Project ID:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="date">Date:</label>
+                    <input type="date" class="input-box"></p>
+                    <p class="report-form"><label for="weather">Weather:</label>
+                    <input type="text" class="input-box"></p>
+                </div>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Safety Officer Audit Checklist</h3>
+                <div>
+                    <table>
+                        <tr>
+                            <th>No.</th>
+                            <th>Inspection Item</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td class="td-no">1.</td>
+                            <td>Review any of the Daily Triple Safety Activities and ensure these are conducted effectively<br>
+                                <p class="table-details">Toolbox Meeting, PPE Visual Inspection, Housekeeping</p>
+                            </td>
+                            <td class="table-status">
+                                <input type="radio" class="table-radio" id="ins1" name="ins1">
+                                <label for="complete" class="table-radio-data">Complete</label>
+                                <input type="radio" class="table-radio" id="ins2" name="ins2">
+                                <label for="complete" class="table-radio-data">Incomplete</label>
+                                <p><input type="text" class="table-remarks" placeholder="Remarks"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">2.</td>
+                            <td>Inspects bulletin boards are up to date and neatly kept<br>
+                                <p class="table-details">Safety and warning signboards are available, visible, and in good condition</p>
+                            </td>
+                            <td class="table-status">
+                                <input type="radio" class="table-radio" id="ins1" name="ins1">
+                                <label for="complete" class="table-radio-data">Complete</label>
+                                <input type="radio" class="table-radio" id="ins2" name="ins2">
+                                <label for="complete" class="table-radio-data">Incomplete</label>
+                                <p><input type="text" class="table-remarks" placeholder="Remarks"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">3.</td>
+                            <td>Check availability of Documentation Storage Area<br>
+                                <p class="table-details">Complete safety document (PTW, Check worker's passport, Permit & CIDB green card validity, SDS, etc.) are stored in an accessible and organized location</p>
+                            </td>
+                            <td class="table-status">
+                                <input type="radio" class="table-radio" id="ins1" name="ins1">
+                                <label for="complete" class="table-radio-data">Complete</label>
+                                <input type="radio" class="table-radio" id="ins2" name="ins2">
+                                <label for="complete" class="table-radio-data">Incomplete</label>
+                                <p><input type="text" class="table-remarks" placeholder="Remarks"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">4.</td>
+                            <td>First Aid Kit<br>
+                                <p class="table-details">First aid kit available, fully stocked, and checked regularly</p>
+                            </td>
+                            <td class="table-status">
+                                <input type="radio" class="table-radio" id="ins1" name="ins1">
+                                <label for="complete" class="table-radio-data">Complete</label>
+                                <input type="radio" class="table-radio" id="ins2" name="ins2">
+                                <label for="complete" class="table-radio-data">Incomplete</label>
+                                <p><input type="text" class="table-remarks" placeholder="Remarks"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">5.</td>
+                            <td>Fire Extinguisher<br>
+                                <p class="table-details">Fire extinguisher available, condition and expiry date</p>
+                            </td>
+                            <td class="table-status">
+                                <input type="radio" class="table-radio" id="ins1" name="ins1">
+                                <label for="complete" class="table-radio-data">Complete</label>
+                                <input type="radio" class="table-radio" id="ins2" name="ins2">
+                                <label for="complete" class="table-radio-data">Incomplete</label>
+                                <p><input type="text" class="table-remarks" placeholder="Remarks"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">6.</td>
+                            <td>Excessive Noise Identification Checklist<br>
+                                <p class="table-details">Ensure the checklist for identification of excessive noise is filled up and current</p>
+                            </td>
+                            <td class="table-status">
+                                <input type="radio" class="table-radio" id="ins1" name="ins1">
+                                <label for="complete" class="table-radio-data">Complete</label>
+                                <input type="radio" class="table-radio" id="ins2" name="ins2">
+                                <label for="complete" class="table-radio-data">Incomplete</label>
+                                <p><input type="text" class="table-remarks" placeholder="Remarks"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">7.</td>
+                            <td>Ensure the checklist for identification of excessive noise is filled up and current<br>
+                                <p class="table-details">Confirm that the generic CHRA used is suitable and applicable for the current site activities</p>
+                            </td>
+                            <td class="table-status">
+                                <input type="radio" class="table-radio" id="ins1" name="ins1">
+                                <label for="complete" class="table-radio-data">Complete</label>
+                                <input type="radio" class="table-radio" id="ins2" name="ins2">
+                                <label for="complete" class="table-radio-data">Incomplete</label>
+                                <p><input type="text" class="table-remarks" placeholder="Remarks"></p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">8.</td>
+                            <td>No Compromise Audit<br>
+                                <p class="table-details">Check and determine if the once a month "No Compromise Audit" is done and if not, to work with the 3S on site to conduct the audit and align the standard of marking</p>
+                            </td>
+                            <td class="table-status">
+                                <input type="radio" class="table-radio" id="ins1" name="ins1">
+                                <label for="complete" class="table-radio-data">Complete</label>
+                                <input type="radio" class="table-radio" id="ins2" name="ins2">
+                                <label for="complete" class="table-radio-data">Incomplete</label>
+                                <p><input type="text" class="table-remarks" placeholder="Remarks"></p>
+                            </td>
+                        </tr>
+                    </table>  
+                </div>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Remarks</h3>
+                <input type="text" class="multi-line-input-box"></p>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Acknowledgement & Submission</h3>
+                <p>The declaration for the safety officer audit report is as below:</p>
+                <p>I hereby acknowledge that I have conducted a thorough check and confirm the following:</p>
+                <p>>> All information in this report is accurate and up to date.</p>
+                <p>>> All personnel working on site are registered and have appropriate permits.</p>
+                <p>By entering my password below, I confirm my identity and consent as a digital acknowledgment.</p>
+                <p>I understand that this action may be recorded as part of the official audit trail.</p>
+                <a href="#"><button type="submit" class="button">Submit</button></a>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-bottom">
+                <p class="small">© 2025 Boilermech Sdn Bhd. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

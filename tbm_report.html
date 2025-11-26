@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BME Automation App - Tool Box Meeting Report</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <link rel="icon" href="images\bme_logo.jpg">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="images/bme_logo.jpg" alt="Boilermech Energy Logo" width="20%"></a></div>
+                <div class="welcome">
+                    <p>Welcome, User</p>
+                    <a href="login.html"><button type="submit" class="button logout">Log Out</button></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1>Tool Box Meeting Report (e-TBM) Submission</h1>
+            <p>Tool Box Meeting Report Submission Form</p>
+            <div class="menu-box">
+                <h3 class="title">General Information</h3>
+                <button type="submit" class="button"><i class="fa fa-search fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Search Project</button>
+                <div>
+                    <div class="form-row">
+                        <label for="project-name">Project Name:</label>
+                        <input type="text" class="input-box">
+                    </div>
+                    <div class="form-row">
+                        <label for="project-id">Project ID:</label>
+                        <input type="text" class="input-box">
+                    </div>
+                    <p class="report-form"><label for="region">Region:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="location">Location:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="meeting-date">Meeting Date:</label>
+                    <input type="date" class="input-box"></p>
+                    <p class="report-form"><label for="weather">Weather:</label>
+                    <input type="text" class="input-box"></p>
+                </div>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Meeting Topics</h3><br>
+                <p class="report-form">Common Topics</p>
+                <div class="menu">
+                    <table>
+                        <tr>
+                            <td class="topics">
+                                <input type="radio" class="radio" id="firstAid" name="firstAid">
+                                <label for="firstAid" class="radio-data">Basic First Aid</label>
+                            </td>
+                            <td class="topics">
+                                <input type="radio" class="radio" id="chemicalHandling" name="chemicalHandling">
+                                <label for="chemicalHandling" class="radio-data">Chemical Handling</label>
+                            </td>
+                            <td class="topics">
+                                <input type="radio" class="radio" id="policyRules" name="policyRules">
+                                <label for="policyRules" class="radio-data">Company Policy and Rules</label>
+                            </td>
+                            <td class="topics">
+                                <input type="radio" class="radio" id="confinedSpace" name="confinedSpace">
+                                <label for="confinedSpace" class="radio-data">Confined Space</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="topics">
+                                <input type="radio" class="radio" id="electricalSafety" name="electricalSafety">
+                                <label for="electricalSafety" class="radio-data">Electrical Safety</label>
+                            </td>
+                            <td class="topics">
+                                <input type="radio" class="radio" id="emergencyPlan" name="emergencyPlan">
+                                <label for="emergencyPlan" class="radio-data">Emergency Response Plan</label>
+                            </td>
+                            <td class="topics">
+                                <input type="radio" class="radio" id="equipmentInspection" name="equipmentInspection">
+                                <label for="equipmentInspection" class="radio-data">Equipment Inspection</label>
+                            </td>
+                            <td class="topics">
+                                <input type="radio" class="radio" id="evacuationPoint" name="evacuationPoint">
+                                <label for="evacuationPoint" class="radio-data">Evacuation Point</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="topics">
+                                <input type="radio" class="radio" id="fireEmergency" name="fireEmergency">
+                                <label for="fireEmergency" class="radio-data">Fire Emergency</label>
+                            </td>
+                            <td class="topics">
+                                <input type="radio" class="radio" id="heavyLifting" name="heavyLifting">
+                                <label for="heavyLifting" class="radio-data">Heavy Lifting</label>
+                            </td>
+                            <td class="topics">
+                                <input type="radio" class="radio" id="hirarc" name="hirarc">
+                                <label for="hirarc" class="radio-data">HIRARC</label>
+                            </td>
+                            <td class="topics">
+                                <input type="radio" class="radio" id="hotWork" name="hotWork">
+                                <label for="hotWork" class="radio-data">Hot Work Procedure</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="topics">
+                                <input type="radio" class="radio" id="housekeeping" name="housekeeping">
+                                <label for="housekeeping" class="radio-data">Housekeeping</label>
+                            </td>
+                            <td class="topics">
+                                <input type="radio" class="radio" id="handlingStorage" name="handlingStorage">
+                                <label for="handlingStorage" class="radio-data">Material Handling / Storage</label>
+                            </td>
+                            <td class="topics">
+                                <input type="radio" class="radio" id="ptw" name="ptw">
+                                <label for="ptw" class="radio-data">Permit To Work</label>
+                            </td>
+                            <td class="topics">
+                                <input type="radio" class="radio" id="ppe" name="ppe">
+                                <label for="ppe" class="radio-data">Personal Protective Equipment</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="topics">
+                                <input type="radio" class="radio" id="psa" name="psa">
+                                <label for="psa" class="radio-data">Personal Safety Awareness</label>
+                            </td>
+                            <td class="topics">
+                                <input type="radio" class="radio" id="scaffolding" name="scaffolding">
+                                <label for="scaffolding" class="radio-data">Scaffolding</label>
+                            </td>
+                            <td class="topics">
+                                <input type="radio" class="radio" id="warning" name="warning">
+                                <label for="warning" class="radio-data">Warning / Barricade / Signboard</label>
+                            </td>
+                            <td class="topics">
+                                <input type="radio" class="radio" id="workingHeight" name="workingHeight">
+                                <label for="workingHeight" class="radio-data">Working at Height</label>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <p class="report-form">Other Topics</p><br>
+                <div class="menu topic-box">
+                    <input type="text" class="search-box project-input" placeholder="Topic">
+                    <a href="#"><button type="submit" class="button button-choose">Choose</button></a>
+                </div>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Competency</h3>
+                <div>
+                    <table>
+                        <tr>
+                            <th class="col-no">No.</th>
+                            <th class="col-title">Competent Person</th>
+                            <th class="col-status">Permit/License</th>
+                        </tr>
+                        <tr>
+                            <td class="td-no">1.</td>
+                            <td>Mobile Crane- Operator Certificate</td>
+                            <td class="table-status">
+                                <input type="radio" class="table-radio" id="yes" name="yes">
+                                <label for="yes" class="table-radio-data">Yes</label>
+                                <input type="radio" class="table-radio" id="no" name="no">
+                                <label for="no" class="table-radio-data">No</label>
+                                <input type="radio" class="table-radio" id="no-activity" name="no-activity">
+                                <label for="no-activity" class="table-radio-data">No Activity</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">2.</td>
+                            <td>Mobile Crane- Perakuan Mesin Angkat (PMA)</td>
+                            <td class="table-status">
+                                <input type="radio" class="table-radio" id="yes" name="yes">
+                                <label for="yes" class="table-radio-data">Yes</label>
+                                <input type="radio" class="table-radio" id="no" name="no">
+                                <label for="no" class="table-radio-data">No</label>
+                                <input type="radio" class="table-radio" id="no-activity" name="no-activity">
+                                <label for="no-activity" class="table-radio-data">No Activity</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">3.</td>
+                            <td>Sky Lift Operator- Perakuan Mesin Angkat (PMA)</td>
+                            <td class="table-status">
+                                <input type="radio" class="table-radio" id="yes" name="yes">
+                                <label for="yes" class="table-radio-data">Yes</label>
+                                <input type="radio" class="table-radio" id="no" name="no">
+                                <label for="no" class="table-radio-data">No</label>
+                                <input type="radio" class="table-radio" id="no-activity" name="no-activity">
+                                <label for="no-activity" class="table-radio-data">No Activity</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">4.</td>
+                            <td>Scaffold Inspector Level 2/3</td>
+                            <td class="table-status">
+                                <input type="radio" class="table-radio" id="yes2" name="yes2">
+                                <label for="yes2" class="table-radio-data">Yes (Level 2)</label>
+                                <input type="radio" class="table-radio" id="yes3" name="yes3">
+                                <label for="yes3" class="table-radio-data">Yes (Level 3)</label>
+                                <input type="radio" class="table-radio" id="no-activity" name="no-activity">
+                                <label for="no-activity" class="table-radio-data">No Activity</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">5.</td>
+                            <td>Scaffold Erector Level 1<br></td>
+                            <td class="table-status">
+                                <input type="radio" class="table-radio" id="yes" name="yes">
+                                <label for="yes" class="table-radio-data">Yes</label>
+                                <input type="radio" class="table-radio" id="no" name="no">
+                                <label for="no" class="table-radio-data">No</label>
+                                <input type="radio" class="table-radio" id="no-activity" name="no-activity">
+                                <label for="no-activity" class="table-radio-data">No Activity</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">6.</td>
+                            <td>Authorised Gas Tester</td>
+                            <td class="table-status">
+                                <input type="radio" class="table-radio" id="yes" name="yes">
+                                <label for="yes" class="table-radio-data">Yes</label>
+                                <input type="radio" class="table-radio" id="no" name="no">
+                                <label for="no" class="table-radio-data">No</label>
+                                <input type="radio" class="table-radio" id="no-activity" name="no-activity">
+                                <label for="no-activity" class="table-radio-data">No Activity</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">7.</td>
+                            <td>Entry Supervisor</td>
+                            <td class="table-status">
+                                <input type="radio" class="table-radio" id="yes" name="yes">
+                                <label for="yes" class="table-radio-data">Yes</label>
+                                <input type="radio" class="table-radio" id="no" name="no">
+                                <label for="no" class="table-radio-data">No</label>
+                                <input type="radio" class="table-radio" id="no-activity" name="no-activity">
+                                <label for="no-activity" class="table-radio-data">No Activity</label>
+                            </td>
+                        </tr>
+                    </table>  
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <th class="col-no">No.</th>
+                            <th class="col-title">Trained Person</th>
+                            <th class="col-status">Certificate of Attendance</th>
+                        </tr>
+                        <tr>
+                            <td class="td-no">1.</td>
+                            <td>Lifting Supervisor</td>
+                            <td class="table-status">
+                                <input type="radio" class="table-radio" id="yes" name="yes">
+                                <label for="yes" class="table-radio-data">Yes</label>
+                                <input type="radio" class="table-radio" id="no" name="no">
+                                <label for="no" class="table-radio-data">No</label>
+                                <input type="radio" class="table-radio" id="no-activity" name="no-activity">
+                                <label for="no-activity" class="table-radio-data">No Activity</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">2.</td>
+                            <td>Signalman</td>
+                            <td class="table-status">
+                                <input type="radio" class="table-radio" id="yes" name="yes">
+                                <label for="yes" class="table-radio-data">Yes</label>
+                                <input type="radio" class="table-radio" id="no" name="no">
+                                <label for="no" class="table-radio-data">No</label>
+                                <input type="radio" class="table-radio" id="no-activity" name="no-activity">
+                                <label for="no-activity" class="table-radio-data">No Activity</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">3.</td>
+                            <td>Rigger and Slinger</td>
+                            <td class="table-status">
+                                <input type="radio" class="table-radio" id="yes" name="yes">
+                                <label for="yes" class="table-radio-data">Yes</label>
+                                <input type="radio" class="table-radio" id="no" name="no">
+                                <label for="no" class="table-radio-data">No</label>
+                                <input type="radio" class="table-radio" id="no-activity" name="no-activity">
+                                <label for="no-activity" class="table-radio-data">No Activity</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">4.</td>
+                            <td>Backhoe<br></td>
+                            <td class="table-status">
+                                <input type="radio" class="table-radio" id="yes" name="yes">
+                                <label for="yes" class="table-radio-data">Yes</label>
+                                <input type="radio" class="table-radio" id="no" name="no">
+                                <label for="no" class="table-radio-data">No</label>
+                                <input type="radio" class="table-radio" id="no-activity" name="no-activity">
+                                <label for="no-activity" class="table-radio-data">No Activity</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">5.</td>
+                            <td>Forklift</td>
+                            <td class="table-status">
+                                <input type="radio" class="table-radio" id="yes" name="yes">
+                                <label for="yes" class="table-radio-data">Yes</label>
+                                <input type="radio" class="table-radio" id="no" name="no">
+                                <label for="no" class="table-radio-data">No</label>
+                                <input type="radio" class="table-radio" id="no-activity" name="no-activity">
+                                <label for="no-activity" class="table-radio-data">No Activity</label>
+                            </td>
+                        </tr>
+                    </table>  
+                </div>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Attendance Information</h3>
+                <p class="report-form"><label for="conducted-by">Conducted By:</label>
+                <input type="text" class="input-box"></p>
+                <p class="report-form"><label for="position">Position:</label>
+                <input type="text" class="input-box"></p>
+                <div>
+                    <table>
+                        <tr>
+                            <td>No. of Project Engineer:&nbsp;&nbsp;<input type="number" class="number-box " id="pe" name="pe"></td>
+                            <td>No. of Project Supervisor:&nbsp;&nbsp;<input type="number" class="number-box " id="ps" name="ps"></td>
+                        </tr>
+                        <tr>
+                            <td>No. of Safety & Health Officer:&nbsp;&nbsp;<input type="number" class="number-box " id="sho" name="sho"></td>
+                            <td>No. of Site Safety Supervisor:&nbsp;&nbsp;<input type="number" class="number-box " id="sss" name="sss"></td>
+                        </tr>
+                        <tr>
+                            <td>No. of Contractor Supervisor (OSH-C):&nbsp;&nbsp;<input type="number" class="number-box " id="cs" name="cs"></td>
+                            <td>No. of Contractor Worker (OSH-C):&nbsp;&nbsp;<input type="number" class="number-box " id="cw" name="cw"></td>
+                        </tr>
+                        <tr>
+                            <td>No. of Contractor Supervisor (Non OSH-C):&nbsp;&nbsp;<input type="number" class="number-box " id="csn" name="csn"></td>
+                            <td>No. of Contractor Worker (Non OSH-C):&nbsp;&nbsp;<input type="number" class="number-box " id="cwn" name="cwn"></td>
+                        </tr>
+                        <tr>
+                            <td>No. of BME Worker:&nbsp;&nbsp;<input type="number" class="number-box " id="bmew" name="bmew"></td>
+                            <td>No. of Other:&nbsp;&nbsp;<input type="number" class="number-box " id="ow" name="ow"></td>
+                        </tr>
+                    </table>  
+                </div>
+                <h3 class="title">Photo of Filled TBM Form</h3>
+                <div>
+                    <p class="report-form upload-image"><label for="tbm_form">Upload filled TBM form here:</label></p>
+                    <p><input type="file" id="tbm_form" name="tbm_form" accept="image/png, image/jpeg" /></p>
+                </div><br>
+                <h3 class="title">Photo TBM in Session</h3>
+                <div>
+                    <p class="report-form upload-image"><label for="tbm_session">Upload TBM in session photo here:</label></p>
+                    <p><input type="file" id="tbm_session" name="tbm_session" accept="image/png, image/jpeg" /></p>
+                </div><br>
+                <h3 class="title">Photo of Filled PTW Form</h3>
+                <div>
+                    <p class="report-form upload-image"><label for="ptw_form">Upload filled PTW form here:</label></p>
+                    <p><input type="file" id="ptw_form" name="ptw_form" accept="image/png, image/jpeg" /></p>
+                </div><br>
+                <h3 class="title">Photo(s)' Remarks</h3>
+                <input type="text" class="multi-line-input-box"></p>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Remarks</h3>
+                <input type="text" class="multi-line-input-box"></p>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Acknowledgement & Submission</h3>
+                <p>The declaration for the tool box meeting report is as below:</p>
+                <p>I hereby acknowledge that I have conducted a thorough check and confirm the following:</p>
+                <p>>> All information in this report is accurate and up to date.</p>
+                <p>>> All personnel working on site are registered and have appropriate permits.</p>
+                <p>By entering my password below, I confirm my identity and consent as a digital acknowledgment.</p>
+                <p>I understand that this action may be recorded as part of the official audit trail.</p>
+                <a href="#"><button type="submit" class="button">Submit</button></a>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-bottom">
+                <p class="small">© 2025 Boilermech Sdn Bhd. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BME Automation App - PPE Visual Inspections Report</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <link rel="icon" href="images\bme_logo.jpg">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="images/bme_logo.jpg" alt="Boilermech Energy Logo" width="20%"></a></div>
+                <div class="welcome">
+                    <p>Welcome, User</p>
+                    <a href="login.html"><button type="submit" class="button logout">Log Out</button></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1>PPE Visual Inspections Report (e-PPE) Submission</h1>
+            <p>PPE Visual Inspections Report Submission Form</p>
+            <div class="menu-box">
+                <h3 class="title">General Information</h3>
+                <button type="submit" class="button"><i class="fa fa-search fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Search Project</button>
+                <div>
+                    <p class="report-form"><label for="project-name">Project Name:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="project-id">Project ID:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="region">Region:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="location">Location:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="activity-date">Activity Date:</label>
+                    <input type="date" class="input-box"></p>
+                    <p class="report-form"><label for="weather">Weather:</label>
+                    <input type="text" class="input-box"></p>
+                </div>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Attendance Information</h3>
+                <div>
+                    <p class="report-form"><label for="conducted-by">Conducted By:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="position">Position:</label>
+                    <input type="text" class="search-box project-input"/></p>
+                    <p class="report-form"><label for="bme-attendees">No. of BME Attendee(s):</label>
+                    <input type="text" class="input-box"></p>    
+                    <p class="report-form"><label for="subcon-attendees">No. of Subcon Attendee(s):</label>
+                    <input type="text" class="input-box"></p>    
+                    <p class="report-form"><label for="visitor-attendees">No. of Visitor Attendee(s):</label>
+                    <input type="text" class="input-box"></p>    
+                </div>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Photo(s) of Wearing PPE on Site</h3>
+                <div>
+                    <p class="report-form upload-image"><label for="ppe_image">Upload PPE photo(s) here:</label></p>
+                    <p><input type="file" id="ppe_image" name="ppe_image" accept="image/png, image/jpeg" /></p>
+                </div><br>
+                <h3 class="title">Photo(s)' Remarks</h3>
+                <input type="text" class="multi-line-input-box"></p>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Remarks</h3>
+                <input type="text" class="multi-line-input-box"></p>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Acknowledgement & Submission</h3>
+                <p>The declaration for the PPE visual inspections report is as below:</p>
+                <p>I hereby acknowledge that I have conducted a thorough check and confirm the following:</p>
+                <p>>> All information in this report is accurate and up to date.</p>
+                <p>>> All personnel working on site are registered and have appropriate permits.</p>
+                <p>By entering my password below, I confirm my identity and consent as a digital acknowledgment.</p>
+                <p>I understand that this action may be recorded as part of the official audit trail.</p>
+                <a href="#"><button type="submit" class="button">Submit</button></a>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-bottom">
+                <p class="small">© 2025 Boilermech Sdn Bhd. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

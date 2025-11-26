@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BME Automation App - Zero Compromise Audit Report</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <link rel="icon" href="images\bme_logo.jpg">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="images/bme_logo.jpg" alt="Boilermech Energy Logo" width="20%"></a></div>
+                <div class="welcome">
+                    <p>Welcome, User</p>
+                    <a href="login.html"><button type="submit" class="button logout">Log Out</button></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1>Zero Compromise Audit Report (e-ZCA) Submission</h1>
+            <p>Zero Compromise Audit Report Submission Form</p>
+            <div class="menu-box">
+                <h3 class="title">General Information</h3>
+                <button type="submit" class="button"><i class="fa fa-search fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Search Project</button>
+                <div>
+                    <div class="form-row">
+                        <label for="project-name">Project Name:</label>
+                        <input type="text" class="input-box">
+                    </div>
+                    <div class="form-row">
+                        <label for="project-id">Project ID:</label>
+                        <input type="text" class="input-box">
+                    </div>
+                    <p class="report-form"><label for="region">Region:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="location">Location:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="audit-date">Date of Audit:</label>
+                    <input type="date" class="input-box"></p>
+                </div>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Documentation Approvals</h3>
+                <div>
+                    <table>
+                        <tr>
+                            <th class="col-no">No.</th>
+                            <th class="col-title">Item</th>
+                            <th class="col-status">Score</th>
+                        </tr>
+                        <tr>
+                            <td class="td-no">1.</td>
+                            <td>Approved Safety Plan & Risk Assessment (HIRARC) on site</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">2.</td>
+                            <td>
+                                Approved SOPs<br>
+                                - Working at Height<br>
+                                - Working at Lifting<br>	
+                                - Working at Confined space
+                            </td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">3.</td>
+                            <td>Daily Toolbox Briefing Records</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">4.</td>
+                            <td>Work Premit Process (Hot works, Confined Space, etc.)</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                    </table>  
+                </div>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Safety Manpower Coverage</h3>
+                <div>
+                    <table>
+                        <tr>
+                            <th class="col-no">No.</th>
+                            <th class="col-title">Item</th>
+                            <th class="col-status">Score</th>
+                        </tr>
+                        <tr>
+                            <td class="td-no">1.</td>
+                            <td>Presence of Competent Safety Supervisor on Site</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">2.</td>
+                            <td>Project Supervisor/Engineer Responsible in Absence of Safety Supervisor</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">3.</td>
+                            <td>Safety Officer Attendance at High-Risk Activities</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                    </table>  
+                </div>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Workforce Safety Compliance</h3>
+                <div>
+                    <table>
+                        <tr>
+                            <th class="col-no">No.</th>
+                            <th class="col-title">Item</th>
+                            <th class="col-status">Score</th>
+                        </tr>
+                        <tr>
+                            <td class="td-no">1.</td>
+                            <td>Full PPE Compliance (Helmet, Harness, Vest, Boots, Gloves)</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">2.</td>
+                            <td>Workers briefed & aware of Safety SOPs</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">3.</td>
+                            <td>Workers possess valid CIDB/OSH/Safety Cards/NIOSH passport</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">4.</td>
+                            <td>No unauthorized personal on site</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                    </table>  
+                </div>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Subcontractor Vetting</h3>
+                <div>
+                    <table>
+                        <tr>
+                            <th class="col-no">No.</th>
+                            <th class="col-title">Item</th>
+                            <th class="col-status">Score</th>
+                        </tr>
+                        <tr>
+                            <td class="td-no">1.</td>
+                            <td>Subcontractors's HSE Qualifications Verified</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">2.</td>
+                            <td>HSE Terms Embedded in Subcontract Agreement</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                    </table>  
+                </div>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Site Condition & Controls</h3>
+                <div>
+                    <table>
+                        <tr>
+                            <th class="col-no">No.</th>
+                            <th class="col-title">Item</th>
+                            <th class="col-status">Score</th>
+                        </tr>
+                        <tr>
+                            <td class="td-no">1.</td>
+                            <td>Housekeeping & Waste Disposal</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">2.</td>
+                            <td>Edge & Fall Protection</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">3.</td>
+                            <td>Equipment & Machinery Safety</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">4.</td>
+                            <td>Signage & Emergency Access</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">5.</td>
+                            <td>Presence of lifting crew (competent person)</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">6.</td>
+                            <td>Scaffold & ladder</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                    </table>  
+                </div>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Safety Leadership & Reporting</h3>
+                <div>
+                    <table>
+                        <tr>
+                            <th class="col-no">No.</th>
+                            <th class="col-title">Item</th>
+                            <th class="col-status">Score</th>
+                        </tr>
+                        <tr>
+                            <td class="td-no">1.</td>
+                            <td>Stop Work Authority (SWA) Exercised Where Needed</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">2.</td>
+                            <td>Near Miss & Incident Reporting</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-no">3.</td>
+                            <td>Near Miss & Incident Reporting</td>
+                            <td class="table-status">
+                                <label for="first_score" class="table-radio-data"></label>
+                                <select name="first_score" id="first_score" class="score">
+                                    <option value="none"></option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8">8</option>
+                                    <option value="9">9</option>
+                                    <option value="10">10</option>
+                                </select>
+                                <input type="text" class="table-remarks" placeholder="Remarks">
+                            </td>
+                        </tr>
+                    </table>  
+                </div>
+            </div>
+            <div class="menu">
+                <h3 class="total">Total / 200&nbsp;&nbsp;<input type="number" class="total-box" id="total" name="total"></h3>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Acknowledgement & Submission</h3>
+                <p>The declaration for the zero compromise audit report is as below:</p>
+                <p>I hereby acknowledge that I have conducted a thorough check and confirm the following:</p>
+                <p>>> All information in this report is accurate and up to date.</p>
+                <p>>> All personnel working on site are registered and have appropriate permits.</p>
+                <p>By entering my password below, I confirm my identity and consent as a digital acknowledgment.</p>
+                <p>I understand that this action may be recorded as part of the official audit trail.</p>
+                <a href="#"><button type="submit" class="button">Submit</button></a>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-bottom">
+                <p class="small">© 2025 Boilermech Sdn Bhd. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>

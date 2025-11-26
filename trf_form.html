@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BME Automation App - Travel Requisition Form</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <link rel="icon" href="images\bme_logo.jpg">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="images/bme_logo.jpg" alt="Boilermech Energy Logo" width="20%"></a></div>
+                <div class="welcome">
+                    <p>Welcome, User</p>
+                    <a href="login.html"><button type="submit" class="button logout">Log Out</button></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1>Travel Requisition Form (e-TRF) Submission</h1>
+            <p>Travel Requisition Form Submission Form</p>
+            <!-- <div class="menu-box">
+                <h3 class="title">General Information</h3>
+                <button type="submit" class="button"><i class="fa fa-search fa-m" aria-hidden="true"></i>&nbsp;&nbsp;Search Project</button>
+                <div>
+                    <div class="form-row">
+                        <label for="project-name">Project Name:</label>
+                        <input type="text" class="input-box">
+                    </div>
+                    <div class="form-row">
+                        <label for="project-id">Project ID:</label>
+                        <input type="text" class="input-box">
+                    </div>
+                    <p class="report-form"><label for="region">Region:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="location">Location:</label>
+                    <input type="text" class="input-box"></p>
+                    <p class="report-form"><label for="meeting-date">Meeting Date:</label>
+                    <input type="date" class="input-box"></p>
+                    <p class="report-form"><label for="weather">Weather:</label>
+                    <input type="text" class="input-box"></p>
+                </div>
+            </div> -->
+            <div class="menu-box">
+                <h3 class="title">Requestor Information</h3><br>
+                <p class="report-form"><label for="requestor-name">Requestor Name:</label>
+                <input type="text" class="input-box"></p>
+                <p class="report-form"><label for="company">Company:</label>
+                <input type="text" class="input-box"></p>
+                <p class="report-form"><label for="designation">Designation:</label>
+                <input type="text" class="input-box"></p>
+                <p class="report-form"><label for="department">Department:</label>
+                <input type="text" class="input-box"></p>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Traveller Information</h3>
+                <p class="report-form"><label for="traveller-name">Traveller Name:</label>
+                <input type="text" class="input-box"></p>
+                <p class="report-form"><label for="ic-passport">I/C or Passport No.:</label>
+                <input type="text" class="input-box"></p>
+                <p class="report-form"><label for="company">Company:</label>
+                <input type="text" class="input-box"></p>
+                <p class="report-form"><label for="designation">Designation:</label>
+                <input type="text" class="input-box"></p>
+                <p class="report-form"><label for="department">Department:</label>
+                <input type="text" class="input-box"></p>
+                <p class="report-form"><label for="mobile">Mobile No.:</label>
+                <input type="text" class="input-box"></p>
+                <p class="radio-trf"><label for="travel">Mode of Travel:</label><br><br>
+                <input type="radio" class="radio" id="road" name="road">
+                <label for="road" class="radio-data">Road</label>
+                <input type="radio" class="radio" id="company-vehicle" name="company-vehicle">
+                <label for="company-vehicle" class="radio-data">Company Vehicle</label>
+                <input type="radio" class="radio" id="air" name="air">
+                <label for="air" class="radio-data">Air</label>
+                <input type="radio" class="radio" id="personal-vehicle" name="personal-vehicle">
+                <label for="personal-vehicle" class="radio-data">Personal Vehicle</label>
+                <input type="radio" class="radio" id="others" name="others">
+                <label for="others" class="radio-data">Others</label><br><br>
+                <p class="radio-trf"><label for="travel">Fare to be Borne By:</label><br><br>
+                <input type="radio" class="radio" id="bmg" name="bmg">
+                <label for="bmg" class="radio-data">BM Greentech Berhad</label>
+                <input type="radio" class="radio" id="bme" name="bme">
+                <label for="bme" class="radio-data">Boilermech Sdn Bhd</label>
+                <input type="radio" class="radio" id="bmge" name="bmge">
+                <label for="bmge" class="radio-data">BM Green Energy Sdn Bhd</label>
+                <input type="radio" class="radio" id="zi" name="zi">
+                <label for="zi" class="radio-data">Zenith Index Sdn Bhd</label>
+                <input type="radio" class="radio" id="bmo" name="bmo">
+                <label for="bmo" class="radio-data">Boilermech Oretech Sdn Bhd</label><br>
+                <input type="radio" class="radio" id="ptb" name="ptb">
+                <label for="ptb" class="radio-data">PT Boilermech</label>
+                <input type="radio" class="radio" id="others" name="others">
+                <label for="others" class="radio-data">Others - Clients/Sub-Contractor/Supplier/&nbsp;<input type="text" class="search-box"></label>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Business Trip Details</h3>
+                <p class="report-form"><label for="from">From:</label>
+                <input type="text" class="input-box"></p>
+                <p class="report-form"><label for="to">To:</label>
+                <input type="text" class="input-box"></p>
+                <p class="report-form"><label for="departure-date">Departure Date:</label>
+                <input type="date" class="input-box"></p>
+                <p class="report-form"><label for="travel-purpose">Purpose of Travel:</label>
+                <input type="text" class="input-box"></p>
+                <p class="report-form"><label for="project-name">Project Name:</label>
+                <input type="text" class="input-box"></p>
+                <p class="report-form"><label for="preferred-airline">Preferred Airline:</label>
+                <input type="text" class="input-box"></p>
+                <p class="report-form"><label for="flight-no">Flight No.:</label>
+                <input type="text" class="input-box"></p>
+                <p class="radio-trf"><label for="baggage">Baggage required (kg):</label>
+                <input type="radio" class="radio" id="15" name="15">
+                <label for="15" class="radio-data">15</label>
+                <input type="radio" class="radio" id="20" name="20">
+                <label for="20" class="radio-data">20</label>
+                <input type="radio" class="radio" id="30" name="30">
+                <label for="30" class="radio-data">15</label>
+                <p class="radio-trf"><label for="meal">Meal Onboard Required:</label>
+                <input type="radio" class="radio" id="yes" name="yes">
+                <label for="yes" class="radio-data">Yes</label>
+                <input type="radio" class="radio" id="no" name="no">
+                <label for="no" class="radio-data">No</label>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Additional Traveller Information</h3>
+                <p class="report-form"><label for="traveller-name">Traveller Name:</label>
+                <input type="text" class="input-box"></p>
+                <p class="report-form"><label for="ic-passport">I/C or Passport No.:</label>
+                <input type="text" class="input-box"></p>
+                <p class="report-form"><label for="designation">Designation:</label>
+                <input type="text" class="input-box"></p>
+                <p class="report-form"><label for="department">Department:</label>
+                <input type="text" class="input-box"></p>
+                <p class="radio-trf"><label for="travel">Fare to be Borne By:</label><br><br>
+                <input type="radio" class="radio" id="bmg" name="bmg">
+                <label for="bmg" class="radio-data">BM Greentech Berhad</label>
+                <input type="radio" class="radio" id="bme" name="bme">
+                <label for="bme" class="radio-data">Boilermech Sdn Bhd</label>
+                <input type="radio" class="radio" id="bmge" name="bmge">
+                <label for="bmge" class="radio-data">BM Green Energy Sdn Bhd</label>
+                <input type="radio" class="radio" id="zi" name="zi">
+                <label for="zi" class="radio-data">Zenith Index Sdn Bhd</label>
+                <input type="radio" class="radio" id="bmo" name="bmo">
+                <label for="bmo" class="radio-data">Boilermech Oretech Sdn Bhd</label><br>
+                <input type="radio" class="radio" id="ptb" name="ptb">
+                <label for="ptb" class="radio-data">PT Boilermech</label>
+                <input type="radio" class="radio" id="others" name="others">
+                <label for="others" class="radio-data">Others - Clients/Sub-Contractor/Supplier/&nbsp;<input type="text" class="search-box"></label>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Remarks</h3>
+                <input type="text" class="multi-line-input-box"></p>
+            </div>
+            <div class="menu-box">
+                <h3 class="title">Acknowledgement & Submission</h3>
+                <p>The declaration for the travel requisition form is as below:</p>
+                <p>I hereby acknowledge that I have conducted a thorough check and confirm the following:</p>
+                <p>>> All information in this report is accurate and up to date.</p>
+                <p>>> All personnel working on site are registered and have appropriate permits.</p>
+                <p>By entering my password below, I confirm my identity and consent as a digital acknowledgment.</p>
+                <p>I understand that this action may be recorded as part of the official audit trail.</p>
+                <a href="#"><button type="submit" class="button">Submit</button></a>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-bottom">
+                <p class="small">© 2025 Boilermech Sdn Bhd. All rights reserved.</p>
+            </div>
+        </footer>
+    </body>
+</html>
