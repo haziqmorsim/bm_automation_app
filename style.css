@@ -81,6 +81,28 @@ body {
     height: 35px;
 }
 
+.button-delete {
+    display: block;
+    width: 75px;
+    margin-top: 0;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    background-color: #248ebed7;
+    color: #091747;
+}
+
+.button-delete:hover {
+    background-color: #42a4d1a4;
+}
+
+.button-edit {
+    display: block;
+    width: 75px;
+    margin-top: 0;
+    margin-right: 5px;
+    margin-bottom: 5px;
+}
+
 .button-justify {
     display: flex;
     justify-content: space-between;
@@ -103,8 +125,24 @@ body {
     background-color: #a30303;
 }
 
+.buttons-info {
+    text-align: right;
+}
+
+.col-email {
+    width: 30%;
+}
+
+.col-name {
+    width: 40%;
+}
+
 .col-no {
     width: 5%;
+}
+
+.col-position {
+    width: 30%;
 }
 
 .col-title {

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>BME Automation App - Departments and Employees Management</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0">
+        <link rel="icon" href="images\bme_logo.jpg">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo"><a href="index.html"><img src="images/bme_logo.jpg" alt="Boilermech Energy Logo" width="20%"></a></div>
+                <div class="welcome">
+                    <p>Welcome, User</p>
+                    <a href="login.html"><button type="submit" class="button logout">Log Out</button></a>
+                </div>
+            </div>
+        </header>
+        <main>
+            <h1>Departments and Employees Management</h1>
+            <p>Department</p>
+            <div class="menu">
+                <select name="departments" id="departmentSelect" class="menu-box select">
+                    <option value="default">Choose a department</option>
+                    <option value="account">Account</option>
+                    <option value="administration">Administration</option>
+                    <option value="aftersales">Aftersales</option>
+                    <option value="business-development">Business Development</option>
+                    <option value="design">Design</option>
+                    <option value="hr">HR</option>
+                    <option value="inventory">Inventory</option>
+                    <option value="it">IT</option>
+                    <option value="legal">Legal</option>
+                    <option value="logistics">Logistics</option>
+                    <option value="management">Management</option>
+                    <option value="operationalexcellence">Operational Excellence</option>
+                    <option value="packing">Packing</option>
+                    <option value="production">Production</option>
+                    <option value="project">Project</option>
+                    <option value="purchasing">Purchasing</option>
+                    <option value="quality-qontrol">Quality Control</option>
+                    <option value="safety-health">Safety & Health</option>
+                    <option value="sales">Sales</option>
+                    <option value="special-project">Special Project</option>
+                </select>
+            </div>
+            <p>Employees</p>
+            <div class="menu">
+                <table>
+                    <tr>
+                        <th class="col-name">Name</th>
+                        <th class="col-position">Title</th>
+                        <th class="col-email">E-mail Address</th>
+                    </tr>
+                    <tr id="employeeBody">
+                        <!-- employee data -->
+                    </tr>
+                </table>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-bottom">
+                <p class="small">© 2025 Boilermech Sdn Bhd. All rights reserved.</p>
+            </div>
+        </footer>
+        <script src="employees.js"></script>
+    </body>
+</html>
